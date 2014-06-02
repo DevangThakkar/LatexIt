@@ -1,0 +1,437 @@
+com.googlecode.leptonica.android.Pix -> com.googlecode.leptonica.android.Pix:
+    int mNativePix -> a
+    boolean mRecycled -> b
+    int getNativePix() -> a
+    void finalize() -> finalize
+    int nativeClone(int) -> nativeClone
+    void nativeDestroy(int) -> nativeDestroy
+    java.lang.Object clone() -> clone
+com.googlecode.leptonica.android.Pixa -> com.googlecode.leptonica.android.Pixa:
+    int mNativePixa -> c
+    int mWidth -> d
+    int mHeight -> e
+    boolean mRecycled -> b
+    int size() -> size
+    void recycle() -> recycle
+    void finalize() -> finalize
+    com.googlecode.leptonica.android.Pix getPix(int) -> a
+    java.util.ArrayList getBoxRects() -> b
+    java.util.Iterator iterator() -> iterator
+    int nativeGetCount(int) -> nativeGetCount
+    void nativeDestroy(int) -> nativeDestroy
+    int nativeGetPix(int,int) -> nativeGetPix
+    boolean nativeGetBoxGeometry(int,int,int[]) -> nativeGetBoxGeometry
+com.googlecode.leptonica.android.Pixa$PixIterator -> com.googlecode.leptonica.android.a:
+    int mIndex -> f
+    com.googlecode.leptonica.android.Pixa this$0 -> g
+    boolean hasNext() -> hasNext
+    void remove() -> remove
+    java.lang.Object next() -> next
+com.googlecode.leptonica.android.ReadFile -> com.googlecode.leptonica.android.ReadFile:
+    com.googlecode.leptonica.android.Pix readBitmap(android.graphics.Bitmap) -> a
+    int nativeReadBitmap(android.graphics.Bitmap) -> nativeReadBitmap
+com.googlecode.tesseract.android.TessBaseAPI -> com.googlecode.tesseract.android.TessBaseAPI:
+    int mNativeData -> mNativeData
+    void finalize() -> finalize
+    boolean init(java.lang.String,java.lang.String,int) -> a
+    void clear() -> clear
+    void end() -> end
+    boolean setVariable(java.lang.String,java.lang.String) -> a
+    void setPageSegMode(int) -> b
+    void setImage(com.googlecode.leptonica.android.Pix) -> a
+    java.lang.String getUTF8Text() -> c
+    int meanConfidence() -> d
+    int[] wordConfidences() -> e
+    com.googlecode.leptonica.android.Pixa getRegions() -> f
+    com.googlecode.leptonica.android.Pixa getTextlines() -> g
+    com.googlecode.leptonica.android.Pixa getStrips() -> h
+    com.googlecode.leptonica.android.Pixa getWords() -> i
+    void nativeClassInit() -> nativeClassInit
+    void nativeConstruct() -> nativeConstruct
+    boolean nativeInitOem(java.lang.String,java.lang.String,int) -> nativeInitOem
+    void nativeClear() -> nativeClear
+    void nativeEnd() -> nativeEnd
+    void nativeSetImagePix(int) -> nativeSetImagePix
+    java.lang.String nativeGetUTF8Text() -> nativeGetUTF8Text
+    int nativeMeanConfidence() -> nativeMeanConfidence
+    int[] nativeWordConfidences() -> nativeWordConfidences
+    boolean nativeSetVariable(java.lang.String,java.lang.String) -> nativeSetVariable
+    void nativeSetPageSegMode(int) -> nativeSetPageSegMode
+    int nativeGetRegions() -> nativeGetRegions
+    int nativeGetTextlines() -> nativeGetTextlines
+    int nativeGetStrips() -> nativeGetStrips
+    int nativeGetWords() -> nativeGetWords
+edu.sfsu.cs.orange.ocr.BeepManager -> edu.sfsu.cs.orange.ocr.a:
+    java.lang.String TAG -> TAG
+    android.app.Activity activity -> h
+    android.media.MediaPlayer mediaPlayer -> i
+    boolean playBeep -> j
+    void updatePrefs() -> j
+    void playBeepSoundAndVibrate() -> k
+    android.media.MediaPlayer buildMediaPlayer(android.content.Context) -> a
+edu.sfsu.cs.orange.ocr.BeepManager$1 -> edu.sfsu.cs.orange.ocr.b:
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+edu.sfsu.cs.orange.ocr.CaptureActivity -> edu.sfsu.cs.orange.ocr.CaptureActivity:
+    java.lang.String TAG -> TAG
+    java.lang.String[] CUBE_SUPPORTED_LANGUAGES -> k
+    java.lang.String[] CUBE_REQUIRED_LANGUAGES -> l
+    edu.sfsu.cs.orange.ocr.camera.CameraManager cameraManager -> m
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler handler -> n
+    edu.sfsu.cs.orange.ocr.ViewfinderView viewfinderView -> o
+    android.view.SurfaceView surfaceView -> p
+    android.view.SurfaceHolder surfaceHolder -> q
+    android.widget.TextView statusViewBottom -> r
+    android.widget.TextView statusViewTop -> s
+    android.widget.TextView ocrResultView -> t
+    android.widget.TextView translationView -> u
+    android.view.View cameraButtonView -> v
+    android.view.View resultView -> w
+    android.view.View progressView -> x
+    edu.sfsu.cs.orange.ocr.OcrResult lastResult -> y
+    android.graphics.Bitmap lastBitmap -> z
+    boolean hasSurface -> A
+    edu.sfsu.cs.orange.ocr.BeepManager beepManager -> B
+    com.googlecode.tesseract.android.TessBaseAPI baseApi -> C
+    java.lang.String sourceLanguageCodeOcr -> D
+    java.lang.String sourceLanguageReadable -> E
+    int pageSegmentationMode -> F
+    int ocrEngineMode -> G
+    java.lang.String characterBlacklist -> H
+    java.lang.String characterWhitelist -> I
+    edu.sfsu.cs.orange.ocr.camera.ShutterButton shutterButton -> J
+    boolean isContinuousModeActive -> K
+    android.content.SharedPreferences prefs -> L
+    android.content.SharedPreferences$OnSharedPreferenceChangeListener listener -> M
+    android.app.ProgressDialog dialog -> N
+    android.app.ProgressDialog indeterminateDialog -> O
+    boolean isEngineReady -> P
+    boolean isPaused -> Q
+    boolean isFirstLaunch -> R
+    android.os.Handler getHandler() -> getHandler
+    com.googlecode.tesseract.android.TessBaseAPI getBaseApi() -> l
+    edu.sfsu.cs.orange.ocr.camera.CameraManager getCameraManager() -> m
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void resumeOCR() -> n
+    void onShutterButtonPressContinuous() -> o
+    void resumeContinuousDecoding() -> p
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void initCamera(android.view.SurfaceHolder) -> a
+    void onPause() -> onPause
+    void stopHandler() -> q
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    java.io.File getStorageDirectory() -> r
+    void initOcrEngine(java.io.File,java.lang.String,java.lang.String) -> a
+    boolean handleOcrDecode(edu.sfsu.cs.orange.ocr.OcrResult) -> a
+    void handleOcrContinuousDecode(edu.sfsu.cs.orange.ocr.OcrResult) -> b
+    void handleOcrContinuousDecode(edu.sfsu.cs.orange.ocr.OcrResultFailure) -> a
+    java.lang.CharSequence setSpanBetweenTokens(java.lang.CharSequence,java.lang.String,android.text.style.CharacterStyle[]) -> a
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void resetStatusView() -> s
+    void showLanguageName() -> t
+    void setStatusViewForContinuous() -> u
+    void setButtonVisibility(boolean) -> a
+    void setShutterButtonClickable(boolean) -> b
+    void drawViewfinder() -> v
+    void onShutterButtonClick$1837f21d() -> w
+    void onShutterButtonFocus$113a6151() -> x
+    boolean checkFirstLaunch() -> y
+    java.lang.String getOcrEngineModeName() -> z
+    void displayProgressDialog() -> A
+    android.app.ProgressDialog getProgressDialog() -> B
+    void showErrorMessage(java.lang.String,java.lang.String) -> b
+    edu.sfsu.cs.orange.ocr.camera.CameraManager access$0(edu.sfsu.cs.orange.ocr.CaptureActivity) -> a
+    edu.sfsu.cs.orange.ocr.ViewfinderView access$1(edu.sfsu.cs.orange.ocr.CaptureActivity) -> b
+    java.lang.String access$2() -> C
+edu.sfsu.cs.orange.ocr.CaptureActivity$1 -> edu.sfsu.cs.orange.ocr.c:
+    int lastX -> S
+    int lastY -> T
+    edu.sfsu.cs.orange.ocr.CaptureActivity this$0 -> U
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+edu.sfsu.cs.orange.ocr.CaptureActivityHandler -> edu.sfsu.cs.orange.ocr.d:
+    java.lang.String TAG -> TAG
+    edu.sfsu.cs.orange.ocr.CaptureActivity activity -> V
+    edu.sfsu.cs.orange.ocr.DecodeThread decodeThread -> W
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State state -> X
+    edu.sfsu.cs.orange.ocr.camera.CameraManager cameraManager -> m
+    void handleMessage(android.os.Message) -> handleMessage
+    void stop() -> stop
+    void resetState() -> D
+    void quitSynchronously() -> E
+    void restartOcrPreview() -> F
+    void restartOcrPreviewAndDecode() -> G
+    void ocrDecode() -> H
+    void hardwareShutterButtonClick() -> I
+    void shutterButtonClick() -> J
+edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State -> edu.sfsu.cs.orange.ocr.e:
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State PREVIEW -> Y
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State PREVIEW_PAUSED -> Z
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State CONTINUOUS -> aa
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State CONTINUOUS_PAUSED -> ab
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State SUCCESS -> ac
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State DONE -> ad
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State[] ENUM$VALUES -> ae
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State[] values() -> values
+    edu.sfsu.cs.orange.ocr.CaptureActivityHandler$State valueOf(java.lang.String) -> valueOf
+edu.sfsu.cs.orange.ocr.DecodeHandler -> edu.sfsu.cs.orange.ocr.f:
+    edu.sfsu.cs.orange.ocr.CaptureActivity activity -> V
+    boolean running -> af
+    com.googlecode.tesseract.android.TessBaseAPI baseApi -> C
+    edu.sfsu.cs.orange.ocr.BeepManager beepManager -> B
+    android.graphics.Bitmap bitmap -> ag
+    boolean isDecodePending -> ah
+    long timeRequired -> ai
+    void handleMessage(android.os.Message) -> handleMessage
+    void resetDecodeState() -> K
+    edu.sfsu.cs.orange.ocr.OcrResult getOcrResult() -> L
+    void sendContinuousOcrFailMessage() -> M
+edu.sfsu.cs.orange.ocr.DecodeThread -> edu.sfsu.cs.orange.ocr.g:
+    edu.sfsu.cs.orange.ocr.CaptureActivity activity -> V
+    android.os.Handler handler -> handler
+    java.util.concurrent.CountDownLatch handlerInitLatch -> aj
+    android.os.Handler getHandler() -> getHandler
+    void run() -> run
+edu.sfsu.cs.orange.ocr.FinishListener -> edu.sfsu.cs.orange.ocr.h:
+    android.app.Activity activityToFinish -> ak
+    void onCancel(android.content.DialogInterface) -> onCancel
+    void onClick(android.content.DialogInterface,int) -> onClick
+    void run() -> run
+edu.sfsu.cs.orange.ocr.HelpActivity -> edu.sfsu.cs.orange.ocr.HelpActivity:
+    java.lang.String TAG -> TAG
+    android.webkit.WebView webView -> al
+    android.view.View$OnClickListener doneListener -> am
+    void onCreate(android.os.Bundle) -> onCreate
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    java.lang.String access$0() -> N
+edu.sfsu.cs.orange.ocr.HelpActivity$1 -> edu.sfsu.cs.orange.ocr.i:
+    edu.sfsu.cs.orange.ocr.HelpActivity this$0 -> an
+    void onClick(android.view.View) -> onClick
+edu.sfsu.cs.orange.ocr.HelpActivity$HelpClient -> edu.sfsu.cs.orange.ocr.j:
+    android.app.Activity context -> ao
+    edu.sfsu.cs.orange.ocr.HelpActivity this$0 -> an
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+edu.sfsu.cs.orange.ocr.HelpActivity$HelpClient$1 -> edu.sfsu.cs.orange.ocr.k:
+    edu.sfsu.cs.orange.ocr.HelpActivity$HelpClient this$1 -> ap
+    void onClick(android.content.DialogInterface,int) -> onClick
+edu.sfsu.cs.orange.ocr.LuminanceSource -> edu.sfsu.cs.orange.ocr.l:
+    int width -> width
+    int height -> height
+edu.sfsu.cs.orange.ocr.OcrCharacterHelper -> edu.sfsu.cs.orange.ocr.m:
+    java.lang.String getDefaultBlacklist(java.lang.String) -> a
+    java.lang.String getDefaultWhitelist(java.lang.String) -> b
+edu.sfsu.cs.orange.ocr.OcrInitAsyncTask -> edu.sfsu.cs.orange.ocr.n:
+    java.lang.String TAG -> TAG
+    java.lang.String[] CUBE_DATA_FILES -> aq
+    edu.sfsu.cs.orange.ocr.CaptureActivity activity -> V
+    android.content.Context context -> ar
+    com.googlecode.tesseract.android.TessBaseAPI baseApi -> C
+    android.app.ProgressDialog dialog -> N
+    android.app.ProgressDialog indeterminateDialog -> O
+    java.lang.String languageCode -> as
+    java.lang.String languageName -> at
+    int ocrEngineMode -> G
+    void onPreExecute() -> onPreExecute
+    java.lang.Boolean doInBackground(java.lang.String[]) -> a
+    void deleteCubeDataFiles(java.io.File) -> a
+    boolean downloadFile(java.lang.String,java.io.File) -> a
+    boolean downloadGzippedFileHttp(java.net.URL,java.io.File) -> a
+    void gunzip(java.io.File,java.io.File) -> a
+    void untar(java.io.File,java.io.File) -> b
+    boolean installFromAssets$60b67bcf(java.lang.String,java.io.File) -> b
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+edu.sfsu.cs.orange.ocr.OcrRecognizeAsyncTask -> edu.sfsu.cs.orange.ocr.o:
+    edu.sfsu.cs.orange.ocr.CaptureActivity activity -> V
+    com.googlecode.tesseract.android.TessBaseAPI baseApi -> C
+    byte[] data -> au
+    int width -> width
+    int height -> height
+    edu.sfsu.cs.orange.ocr.OcrResult ocrResult -> av
+    long timeRequired -> ai
+    java.lang.Boolean doInBackground$5f8445a4() -> O
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+edu.sfsu.cs.orange.ocr.OcrResult -> edu.sfsu.cs.orange.ocr.p:
+    android.graphics.Bitmap bitmap -> ag
+    java.lang.String text -> aw
+    int[] wordConfidences -> ax
+    int meanConfidence -> ay
+    java.util.List regionBoundingBoxes -> az
+    java.util.List textlineBoundingBoxes -> aA
+    java.util.List wordBoundingBoxes -> aB
+    java.util.List stripBoundingBoxes -> aC
+    java.util.List characterBoundingBoxes -> aD
+    long timestamp -> timestamp
+    long recognitionTimeRequired -> aE
+    android.graphics.Paint paint -> aF
+    java.lang.String toString() -> toString
+edu.sfsu.cs.orange.ocr.OcrResultFailure -> edu.sfsu.cs.orange.ocr.q:
+    long timeRequired -> ai
+    long timestamp -> timestamp
+    java.lang.String toString() -> toString
+edu.sfsu.cs.orange.ocr.OcrResultText -> edu.sfsu.cs.orange.ocr.r:
+    java.lang.String text -> aw
+    int[] wordConfidences -> ax
+    int meanConfidence -> ay
+    android.graphics.Point bitmapDimensions -> aG
+    java.util.List regionBoundingBoxes -> az
+    java.util.List textlineBoundingBoxes -> aA
+    java.util.List stripBoundingBoxes -> aC
+    java.util.List wordBoundingBoxes -> aB
+    java.util.List characterBoundingBoxes -> aD
+    java.lang.String toString() -> toString
+edu.sfsu.cs.orange.ocr.PlanarYUVLuminanceSource -> edu.sfsu.cs.orange.ocr.s:
+    byte[] yuvData -> aH
+    int dataWidth -> aI
+    int dataHeight -> aJ
+    int left -> left
+    int top -> top
+    android.graphics.Bitmap renderCroppedGreyscaleBitmap() -> P
+    void reverseHorizontal(int,int) -> a
+edu.sfsu.cs.orange.ocr.PreferencesActivity -> edu.sfsu.cs.orange.ocr.PreferencesActivity:
+    android.preference.ListPreference listPreferenceOcrEngineMode -> aK
+    android.preference.EditTextPreference editTextPreferenceCharacterBlacklist -> aL
+    android.preference.EditTextPreference editTextPreferenceCharacterWhitelist -> aM
+    android.preference.ListPreference listPreferencePageSegmentationMode -> aN
+    android.content.SharedPreferences sharedPreferences -> aO
+    void onCreate(android.os.Bundle) -> onCreate
+    void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+    void onResume() -> onResume
+    void onPause() -> onPause
+edu.sfsu.cs.orange.ocr.ViewfinderView -> edu.sfsu.cs.orange.ocr.ViewfinderView:
+    edu.sfsu.cs.orange.ocr.camera.CameraManager cameraManager -> m
+    android.graphics.Paint paint -> aF
+    int maskColor -> aP
+    int frameColor -> aQ
+    int cornerColor -> aR
+    edu.sfsu.cs.orange.ocr.OcrResultText resultText -> aS
+    java.util.List textlineBoundingBoxes -> aA
+    java.util.List wordBoundingBoxes -> aB
+    android.graphics.Rect previewFrame -> aT
+    android.graphics.Rect rect -> rect
+    void setCameraManager(edu.sfsu.cs.orange.ocr.camera.CameraManager) -> setCameraManager
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void drawViewfinder() -> v
+    void addResultText(edu.sfsu.cs.orange.ocr.OcrResultText) -> a
+    void removeResultText() -> Q
+edu.sfsu.cs.orange.ocr.camera.AutoFocusManager -> edu.sfsu.cs.orange.ocr.camera.a:
+    java.lang.String TAG -> TAG
+    java.util.Collection FOCUS_MODES_CALLING_AF -> aU
+    boolean active -> aV
+    boolean manual -> aW
+    boolean useAutoFocus -> aX
+    android.hardware.Camera camera -> aY
+    java.util.Timer timer -> aZ
+    java.util.TimerTask outstandingTask -> ba
+    void onAutoFocus(boolean,android.hardware.Camera) -> onAutoFocus
+    void checkAndStart() -> R
+    void start() -> start
+    void start(long) -> a
+    void stop() -> stop
+    void access$0$5f8ce20a(edu.sfsu.cs.orange.ocr.camera.AutoFocusManager) -> a
+edu.sfsu.cs.orange.ocr.camera.AutoFocusManager$1 -> edu.sfsu.cs.orange.ocr.camera.b:
+    edu.sfsu.cs.orange.ocr.camera.AutoFocusManager this$0 -> bb
+    void run() -> run
+edu.sfsu.cs.orange.ocr.camera.AutoFocusManager$2 -> edu.sfsu.cs.orange.ocr.camera.c:
+    edu.sfsu.cs.orange.ocr.camera.AutoFocusManager this$0 -> bb
+    void run() -> run
+edu.sfsu.cs.orange.ocr.camera.CameraConfigurationManager -> edu.sfsu.cs.orange.ocr.camera.d:
+    android.content.Context context -> ar
+    android.graphics.Point screenResolution -> bc
+    android.graphics.Point cameraResolution -> bd
+    void setDesiredCameraParameters(android.hardware.Camera) -> a
+    android.graphics.Point findBestPreviewSizeValue(android.hardware.Camera$Parameters,android.graphics.Point) -> a
+    java.lang.String findSettableValue(java.util.Collection,java.lang.String[]) -> a
+edu.sfsu.cs.orange.ocr.camera.CameraConfigurationManager$1 -> edu.sfsu.cs.orange.ocr.camera.e:
+    edu.sfsu.cs.orange.ocr.camera.CameraConfigurationManager this$0 -> be
+    int compare(java.lang.Object,java.lang.Object) -> compare
+edu.sfsu.cs.orange.ocr.camera.CameraManager -> edu.sfsu.cs.orange.ocr.camera.f:
+    java.lang.String TAG -> TAG
+    android.content.Context context -> ar
+    edu.sfsu.cs.orange.ocr.camera.CameraConfigurationManager configManager -> bf
+    android.hardware.Camera camera -> aY
+    edu.sfsu.cs.orange.ocr.camera.AutoFocusManager autoFocusManager -> bg
+    android.graphics.Rect framingRect -> bh
+    android.graphics.Rect framingRectInPreview -> bi
+    boolean initialized -> bj
+    boolean previewing -> bk
+    boolean reverseImage -> bl
+    int requestedFramingRectWidth -> bm
+    int requestedFramingRectHeight -> bn
+    edu.sfsu.cs.orange.ocr.camera.PreviewCallback previewCallback -> bo
+    void openDriver(android.view.SurfaceHolder) -> b
+    void closeDriver() -> S
+    void startPreview() -> startPreview
+    void stopPreview() -> stopPreview
+    void requestOcrDecode(android.os.Handler,int) -> a
+    void requestAutoFocus(long) -> b
+    android.graphics.Rect getFramingRect() -> T
+    android.graphics.Rect getFramingRectInPreview() -> U
+    void adjustFramingRect(int,int) -> b
+    edu.sfsu.cs.orange.ocr.PlanarYUVLuminanceSource buildLuminanceSource(byte[],int,int) -> a
+edu.sfsu.cs.orange.ocr.camera.PreviewCallback -> edu.sfsu.cs.orange.ocr.camera.g:
+    java.lang.String TAG -> TAG
+    edu.sfsu.cs.orange.ocr.camera.CameraConfigurationManager configManager -> bf
+    android.os.Handler previewHandler -> bp
+    int previewMessage -> bq
+    void setHandler(android.os.Handler,int) -> b
+    void onPreviewFrame(byte[],android.hardware.Camera) -> onPreviewFrame
+edu.sfsu.cs.orange.ocr.camera.ShutterButton -> edu.sfsu.cs.orange.ocr.camera.ShutterButton:
+    edu.sfsu.cs.orange.ocr.camera.ShutterButton$OnShutterButtonListener mListener -> br
+    boolean mOldPressed -> bs
+    void setOnShutterButtonListener(edu.sfsu.cs.orange.ocr.camera.ShutterButton$OnShutterButtonListener) -> setOnShutterButtonListener
+    void drawableStateChanged() -> drawableStateChanged
+    void callShutterButtonFocus$1385ff() -> V
+    boolean performClick() -> performClick
+    void access$0$113a6151(edu.sfsu.cs.orange.ocr.camera.ShutterButton) -> a
+edu.sfsu.cs.orange.ocr.camera.ShutterButton$1 -> edu.sfsu.cs.orange.ocr.camera.h:
+    edu.sfsu.cs.orange.ocr.camera.ShutterButton this$0 -> bt
+    boolean val$pressed -> bu
+    void run() -> run
+edu.sfsu.cs.orange.ocr.camera.ShutterButton$OnShutterButtonListener -> edu.sfsu.cs.orange.ocr.camera.i:
+    void onShutterButtonFocus$113a6151() -> x
+    void onShutterButtonClick$1837f21d() -> w
+org.xeustechnologies.jtar.Octal -> a.a.a.a:
+    long parseOctal(byte[],int,int) -> b
+org.xeustechnologies.jtar.TarEntry -> a.a.a.b:
+    java.io.File file -> file
+    org.xeustechnologies.jtar.TarHeader header -> bv
+    java.lang.String getName() -> getName
+    long getSize() -> getSize
+    boolean isDirectory() -> isDirectory
+org.xeustechnologies.jtar.TarHeader -> a.a.a.c:
+    java.lang.StringBuffer name -> bw
+    int mode -> mode
+    int userId -> bx
+    int groupId -> by
+    long size -> bz
+    long modTime -> bA
+    int checkSum -> bB
+    byte linkFlag -> bC
+    java.lang.StringBuffer linkName -> bD
+    java.lang.StringBuffer magic -> bE
+    java.lang.StringBuffer userName -> bF
+    java.lang.StringBuffer groupName -> bG
+    int devMajor -> bH
+    int devMinor -> bI
+    java.lang.StringBuffer parseName(byte[],int,int) -> c
+org.xeustechnologies.jtar.TarInputStream -> a.a.a.d:
+    org.xeustechnologies.jtar.TarEntry currentEntry -> bJ
+    long currentFileSize -> bK
+    long bytesRead -> bL
+    boolean markSupported() -> markSupported
+    void mark(int) -> mark
+    void reset() -> reset
+    int read() -> read
+    int read(byte[],int,int) -> read
+    org.xeustechnologies.jtar.TarEntry getNextEntry() -> W
+    long skip(long) -> skip
